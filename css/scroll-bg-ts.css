@@ -1,0 +1,200 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Didot Regular'; }
+
+body,
+html {
+  height: 100%; }
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-perspective: 1000;
+  perspective: 1000; }
+
+.section {
+  height: 100%;
+  width: calc( 100% / 3 );
+  float: left;
+  position: relative; }
+
+.section:nth-child(1) {
+  
+  background-color: #000000;
+ }
+
+.section:nth-child(2) {
+ background-color:#000000;
+	
+ }
+ 
+
+.section:nth-child(3) {
+  background-color: #000000 }
+
+/*.section:nth-child(4) {
+  background: #373737;
+background-blend-mode: multiply;}*/
+
+/*.section:nth-child(5) {
+  background: #000000; }*/
+
+@keyframes imagechange2 {
+  0%   {background-image: url("../img/Image-04.png");}
+  50%  {background-image: url( "../img/FASHION1.jpg");}
+  100% {background-image: url("../img/Image-04.png");}
+   	
+}
+@keyframes imagechange {
+  0%   {background-image: url("../img/Image-01.png");}
+  33%  {background-image: url( "../img/top-search.jpg");}
+  66% {background-image: url("../img/top-search-1.jpg");}
+  100%   {background-image: url("../img/Image-01.png");}	
+}
+
+easeinout
+{
+	animation-timing-function: ease-in-out
+}
+.sections {
+  width: 300%;
+  height: 100%; }
+
+.section__title {
+  top: 50%;
+	left: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: #fff;
+ transform: rotate(270deg)
+}
+
+@font-face
+{font-family: "Didot Regular","Segoe UI";
+src: url("../font/Didot Regular.ttf"),url("../font/SEGOEUI.TTF");
+
+}
+.section__hed {
+
+  position: absolute;
+  -webkit-transform: translate(-40%, -30%);
+  transform: translate(-40%, -30%);
+  font-size: 20px;
+  color: #fff; 
+  max-width: 800px;
+   -ms-transform: translate(-40%, -30%);
+ 
+	text-align: left;	
+	
+}
+
+.section__hed > img
+{
+	width: 100%;
+}
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  background: -webkit-linear-gradient(45deg, #537895 0%, #09203f 100%);
+  background: linear-gradient(45deg, #537895 0%, #09203f 100%);
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  padding: 3em;
+  text-align: left;
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  max-width: none;
+  width: calc(100% + 60px);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
+  transition: opacity 0.35s, transform 0.45s;
+  -webkit-transform: translate3d(-40px,0,0);
+  transform: translate3d(-40px,0,0);
+	height: 100%;
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: yellow;
+  position: relative;
+  font-size: 17px;
+  background-color: transparent;
+  padding: 15% 0 5px 0;
+  text-align: left;
+	font-family: "Didot Regular"
+}
+
+.hovereffect .overlay:before {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+  border: 1px solid #fff;
+  content: '';
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
+  transition: opacity 0.35s, transform 0.45s;
+  -webkit-transform: translate3d(-20px,0,0);
+  transform: translate3d(-20px,0,0);
+}
+
+.hovereffect a, .hovereffect p {
+  color: #FFF;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
+  transition: opacity 0.35s, transform 0.45s;
+  -webkit-transform: translate3d(-10px,0,0);
+  transform: translate3d(-10px,0,0);
+}
+
+.hovereffect:hover img {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.hovereffect:hover .overlay:before,
+.hovereffect:hover a, .hovereffect:hover p {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+.ts-container 
+{
+	display: flex;
+	width: 70%;
+	height: 80%;
+	position: relative;
+	 -webkit-transform: translate(-50%, -50%);
+	 -ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	column-count: 4;
+	margin: 15px 15px;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
